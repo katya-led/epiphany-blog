@@ -1,35 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  @@include('_include/page-head.html')
   <title>Epiphany - interior blog</title>
 </head>
 <body>
-  <header class="page-header">
-    <div class="page-header__inner">
-      <div class="main-nav">
-        <nav id="menudown" class="main-nav__nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="">Home</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Pages</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Interior</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Architecture</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Travel</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">Food</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="">About me</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="page-header__socials">
-        <a class="page-header__socials-link  page-header__socials-link--tw" href="#"></a>
-        <a class="page-header__socials-link  page-header__socials-link--fb" href="#"></a>
-        <a class="page-header__socials-link  page-header__socials-link--pin" href="#"></a>
-        <a class="page-header__socials-link  page-header__socials-link--vimeo" href="#"></a>
-        <a class="page-header__socials-link  page-header__socials-link--inst" href="#"></a>
-      </div>
-    </div>
-    <div id="menutrigger" class="main-nav__toggle"><a href="" class="main-nav_toggle-link"><span class="main-nav__hamburger"></span></a></div>
-  </header>
+@@include('img/sprite-svg.svg')
+@@include('_include/page-header.html')
 
   <div class="logo">
     <div class="logo__inner">
@@ -169,17 +146,6 @@
     <div class="link-wrapper"><a href="#">older posts >></a></div>
   </div>
 
-  <footer class="page-footer">
-    <div class="page-footer__inner">
-      <p class="text">&#169; Epiphany | Design by <a class="page-footer__link" href="">Olga Zalite</a></p>
-    </div>
-    <div class="page-footer__socials">
-        <a class="page-footer__socials-link  page-footer__socials-link--tw" href="#"></a>
-        <a class="page-footer__socials-link  page-footer__socials-link--fb" href="#"></a>
-        <a class="page-footer__socials-link  page-footer__socials-link--pin" href="#"></a>
-        <a class="page-footer__socials-link  page-footer__socials-link--vimeo" href="#"></a>
-        <a class="page-footer__socials-link  page-footer__socials-link--inst" href="#"></a>
-      </div>
-  </footer>
+  @@include('_include/page-footer.html')
 </body>
 </html>

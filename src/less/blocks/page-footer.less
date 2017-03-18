@@ -1,0 +1,37 @@
+.page-footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  background: url('../../img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &__inner {
+    width: @screen-xs;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: @fz-accent;
+    color: @teal-lighter;
+    font-weight: @fw-regular;
+  }
+
+    @media (min-width: @screen-sm) and (max-width: @max-tablet){
+
+    &__inner {
+      min-width: @screen-sm;
+    }
+  }
+
+  @media (min-width: @screen-md){
+    &__inner {
+      width: @screen-md;
+    }
+
+  }
+}
+

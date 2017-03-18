@@ -1,0 +1,54 @@
+.main-nav {
+  background-color: @black;
+  flex: 1;
+  text-align: right;
+
+  @media (min-width: @screen-sm) and (max-width: @max-tablet) {
+
+  }
+
+  @media (min-width: @screen-md) {
+
+  }
+
+  &__nav {
+    background-color: @black;
+  }
+
+  &__list {
+    background-color: @black;
+    width: 100%;
+    top: 16px;
+  }
+
+  &__item {
+    list-style-type: none;
+    // border: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  &__link {
+    .font-accent();
+    text-decoration: none;
+    color: @teal-lighter;
+    display: block;
+    text-align: center;
+    padding: 14px;
+
+      &:visited {
+        color: @teal-lighter;
+      }
+      
+      &:hover {
+        color: @white;
+        transition-duration: 0.45s;
+      }
+
+      &:active{
+        color: @white;
+      }
+  }
+
+}

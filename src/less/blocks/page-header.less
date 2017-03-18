@@ -1,0 +1,48 @@
+.page-header {
+  background-color: @black;
+  color: @grey;
+  border-bottom: 1px solid @teal-darker;
+  padding-bottom: 16px;
+  padding-top: 11px;
+
+  &__inner {
+    // text-align: right;
+    // position: relative;
+      .container();
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+  }
+
+  &__socials {
+    display: none;
+
+    @media (min-width: @screen-sm) and (max-width: @max-tablet) {
+      display: none;
+    }
+
+    @media (min-width: @screen-md) {
+      display: inline-flex;
+    }
+  }
+
+  &__socials-link {
+    display: inline-flex;
+    margin-left: 20px;
+    color: @teal-lighter;
+
+      &:hover {
+        .ellipse-inst, .ellipse-fb, .ellipse-vk {
+          fill: @white;
+          transition-duration: 0.45s;
+        }
+
+      }
+
+    }
+  }
+
+
