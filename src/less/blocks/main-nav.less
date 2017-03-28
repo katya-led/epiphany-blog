@@ -1,7 +1,7 @@
 .main-nav {
-  background-color: @black;
+  background-color: @grey-menu;
   flex: 1;
-  text-align: right;
+  text-align: left;
 
   @media (min-width: @screen-sm) and (max-width: @max-tablet) {
 
@@ -12,43 +12,47 @@
   }
 
   &__nav {
-    background-color: @black;
+    background-color: @grey-menu;
   }
 
   &__list {
-    background-color: @black;
+    background-color: @grey-menu;
     width: 100%;
     top: 16px;
   }
 
   &__item {
     list-style-type: none;
-    // border: none;
+    border: none;
     display: inline-flex;
     flex-wrap: nowrap;
     justify-content: space-around;
   }
 
   &__link {
-    .font-accent();
+    .f-subtext();
     text-decoration: none;
-    color: @teal-lighter;
+    color: @grey-lightest;
     display: block;
     text-align: center;
     padding: 14px;
+    transition: color .3s ease;
 
       &:visited {
-        color: @teal-lighter;
+        color: @grey-lightest;
       }
       
       &:hover {
         color: @white;
-        transition-duration: 0.45s;
       }
 
       &:active{
         color: @white;
       }
+  }
+
+  &__toggle {
+    display: none;
   }
 
 }

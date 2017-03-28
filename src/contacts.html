@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_include/page-head.html')
+  <title>Epiphany - contacts</title>
+</head>
+<body>
+  @@include('img/sprite-svg.svg')
+  @@include('_include/page-header.html')
+  @@include('_include/logo.html')
+  <div class="content">
+    @@include('_include/aside.html')
+    <div class="content-main">
+      <div class="comment-form">
+        <div class="comment-form__inner">
+          <h1 class="comment-form__title">Feel free to contact me!</h1>
+          <p class="comment-form__text">For any questions or enquiries, feel free to e-mail me at <a href="mailto:eliscooper@gmail.com">eliscooper@gmail.com</a> or use the contact form.</p>
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="E-mail">
+          <input type="text" placeholder="Website url">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <div class="comment-form__btn-wrapper"><button class="comment-form__btn">Post comment</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('_include/page-footer.html')
+</body>
+</html>

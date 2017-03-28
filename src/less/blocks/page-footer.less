@@ -1,37 +1,37 @@
 .page-footer {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
-  background: url('../../img/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  background-color: @grey-menu;
 
   &__inner {
-    width: @screen-xs;
+    width: 1170px;
     margin: 0 auto;
+    display: flex;
   }
 
   &__text {
-    font-size: @fz-accent;
-    color: @teal-lighter;
-    font-weight: @fw-regular;
+    flex: 1;
+    color: @grey-lightest;
+    padding-left: 14px;
   }
 
-    @media (min-width: @screen-sm) and (max-width: @max-tablet){
-
-    &__inner {
-      min-width: @screen-sm;
-    }
+  &__link {
+    text-decoration: none;
+    color: @white;
   }
 
-  @media (min-width: @screen-md){
-    &__inner {
-      width: @screen-md;
-    }
+  &__socials-link {
+    display: inline-flex;
+    margin: 0 10px;
+    color: @grey-lightest;
 
+      &:hover {
+        .icon {
+          fill: @white;
+        }
+
+      }
   }
 }
 
