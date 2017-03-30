@@ -1,20 +1,25 @@
-.single-post {
+.category {
   background-color: @grey-lighten;
   margin-bottom: 30px;
 
+  &__link {
+    text-decoration: none;
+    color: @grey;
+  }
+
   &__inner {
-    padding: 30px 25px 40px;
+    padding: 30px 35px 43px;
   }
 
   &__title {
-    .f-h1-title();
+    .f-h2();
     text-align: center;
-    margin-bottom: 30px;
+    color: @grey;
   }
 
   &__text {
     .f-base();
-    margin-bottom: 35px;
+    color: @grey;
   }
 
   &__footer {
@@ -23,18 +28,20 @@
   }
 
   &__date-day {
-    .f-subtext();
+    .f-subtext-mini();
     color: @grey-lightest;
     flex: 1;
   }
 
-  &__socials-link {
-    color: @grey;
+  &__comments {
+    .f-subtext-mini();
+    color: @grey-lightest;
+    text-decoration: underline;
+    cursor: pointer;
     transition: color .3s ease;
 
     &:hover {
-      color: @peach;
+      color: @grey;
     }
   }
-
 }
