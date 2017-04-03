@@ -46,8 +46,20 @@
     color: @peach;
   }
 
-  &__instagram-photo {
-    display: inline-block;
+  &__inst-photo-wrap {
+    .row();
+    justify-content: space-between;
+  }
+
+  &__inst-photo {
+    width: 70px;
+    height: 71px;
+    overflow: hidden;
+    margin-bottom: 5px;
+  }
+
+  &__inst-img {
+    width: 100%;
   }
 
   &__socials {
@@ -64,6 +76,17 @@
     }
   }
 
+  &__categories-img-wrap {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  &__categories-img {
+    width: 100%;
+  }
+
   &__categories-link {
     .f-aside-categories();
     color: @grey;
@@ -73,12 +96,14 @@
   &__trend-title {
     .f-aside-trend();
     text-align: center;
+    margin-bottom: 5px;
   }
 
   &__trend-img-wrapper {
     width: 220px;
     height: 220px;
     overflow: hidden;
+    margin-bottom: 18px;
   }
 
   &__trend-img {
@@ -91,6 +116,19 @@
     text-align: center;
   }
 
+  &__search-wrap {
+    width: 220px;
+    height: 30px;
+  }
+
+  &__search-area {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border: 1px solid @grey-lightest;
+    border-radius: 3px;
+  }
+
   &__advert-img-wrapper {
     width: 220px;
     min-height: 160px;
@@ -100,4 +138,5 @@
   &__advert-img {
     width: 100%;
   }
+
 }
