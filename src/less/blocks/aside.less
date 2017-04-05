@@ -1,5 +1,6 @@
 .aside {
   width: 270px;
+  margin-bottom: 75px;
   background-color: @grey-lighten;
 
   &__inner {
@@ -20,7 +21,7 @@
         display: block;
         width: 100%;
         height: 1px;
-        background-color: @grey-lightest;
+        background-color: @grey-bd;
         top: 23px; 
         z-index: 500;
       }
@@ -64,10 +65,11 @@
 
   &__socials {
     text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__socials-link {
-    padding: 0 10px;
     color: @grey-lightest;
     transition: color .3s ease;
 
@@ -77,26 +79,35 @@
   }
 
   &__categories-img-wrap {
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    display: inline-flex;
+    margin-bottom: 10px;
   }
 
   &__categories-img {
-    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 31px;
+    overflow: hidden;
   }
 
   &__categories-link {
+    display: inline-block;
+    vertical-align: middle;
     .f-aside-categories();
     color: @grey;
     text-decoration: none;
+    padding-left: 11px;
   }
 
   &__trend-title {
     .f-aside-trend();
     text-align: center;
     margin-bottom: 5px;
+  }
+
+  &__trend-title-link {
+    text-decoration: none;
+    color: @grey;
   }
 
   &__trend-img-wrapper {
@@ -125,8 +136,9 @@
     width: 100%;
     height: 100%;
     border: none;
-    border: 1px solid @grey-lightest;
-    border-radius: 3px;
+    border: 1px solid @grey-bd;
+    border-radius: 1px;
+    padding-left: 10px;
   }
 
   &__advert-img-wrapper {

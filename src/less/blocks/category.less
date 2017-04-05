@@ -1,20 +1,32 @@
 .category {
   background-color: @grey-lighten;
   margin-bottom: 30px;
+  width: 420px;
 
   &__link {
     text-decoration: none;
     color: @grey;
   }
 
+  &__img__wrapper {
+    width: 420px;
+    max-height: 277px;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
   &__inner {
-    padding: 30px 35px 43px;
+    padding: 20px 25px 43px;
   }
 
   &__title {
     .f-h2();
     text-align: center;
     color: @grey;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -23,7 +35,7 @@
   }
 
   &__footer {
-    margin-top: 24px;
+    margin-top: 10px;
     display: flex;
   }
 
@@ -33,7 +45,7 @@
     flex: 1;
   }
 
-  &__comments {
+  &__comments-link {
     .f-subtext-mini();
     color: @grey-lightest;
     text-decoration: underline;
