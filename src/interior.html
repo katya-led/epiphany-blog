@@ -24,72 +24,12 @@
       </div>
     </article>
     <div class="content-category">
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-6.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">Botanic kitchen style</h1>
-          <p class="category__text">Host a fresh experience surrounded by delicious vegetables, fruits and herbs. The Botanic Kitchen provides a warm and inviting atmosphere for...</p>
-          <footer class="category__footer">
-            <div class="category__date-day">15.04.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">17 comments</a></div>
-          </footer>
-        </div>
-      </article>
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-5.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">How to choose an armchair</h1>
-          <p class="category__text">Host a fresh experience surrounded by delicious vegetables, fruits and herbs. The Botanic Kitchen provides a warm and inviting atmosphere for...</p>
-          <footer class="category__footer">
-            <div class="category__date-day">15.04.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">17 comments</a></div>
-          </footer>
-        </div>
-      </article>
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-4.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">Using dark color can be good</h1>
-          <p class="category__text">I don't think anyone can deny there is something special about handwritten notes, cards, and letters. Today everyone’s used to sending emails...</p>
-          <footer class="category__footer">
-            <div class="category__date-day">14.03.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">10 comments</a></div>
-          </footer>
-        </div>
-      </article>
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-3.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">5 ways to keep your plants</h1>
-          <p class="category__text">Keeping plants alive indoors can prove next to impossible to some, but it really isn't all that hard to do. Plants need light, water, support, nutrition...</p>
-          <footer class="category__footer">
-            <div class="category__date-day">14.02.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">31 comments</a></div>
-          </footer>
-        </div>
-      </article>
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-2.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">10 best kitchen designs</h1>
-          <p class="category__text">This year in kitchen design, we saw everything from bright colors and a lot of shine to relaxed looks with wood and warm hues.</p>
-          <footer class="category__footer">
-            <div class="category__date-day">10.02.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">31 comments</a></div>
-          </footer>
-        </div>
-      </article>
-      <article class="category">
-        <div class="category__img-wrapper"><a href="#" class="category__img-link"><img src="img/interior-image-1.jpg" alt="photo" class="category__img"></a></div>
-        <div class="category__inner">
-          <h1 class="category__title">Best way to sleep tight</h1>
-          <p class="category__text">Do you know how important a pillow may be for your sleep and well-being? Sleeping in an abnormal position can lead to aches...</p>
-          <footer class="category__footer">
-            <div class="category__date-day">01.02.2016, friday</div>
-            <div class="category__comments"><a href="#" class="category__comments-link">30 comments</a></div>
-          </footer>
-        </div>
-      </article>
+<!-- category -->
+  @@loop('_include/_content/category-post.html', [
+    { "title": "My post title", "text": "lorem ipsum..." },
+    { "title": "Another post", "text": "lorem ipsum..." },
+    { "title": "One more post", "text": "lorem ipsum..." }
+  ])
     </div>
     @@include('_include/blog-nav.html')
   </div>
