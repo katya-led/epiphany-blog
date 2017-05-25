@@ -1,5 +1,6 @@
 .single-post {
   margin-bottom: 20px;
+  background-color: @grey-lighten;
 
   &__img-wrapper {
     background-color: @grey-lighten;
@@ -15,7 +16,7 @@
 
   &__inner {
     background-color: @grey-lighten;
-    padding: 30px 25px 40px;
+    padding: 30px 25px 12px;
   }
 
   &__title {
@@ -64,22 +65,20 @@
   }
 
   &__tag-list {
-    margin-top: 30px;
+    padding: 0 25px 30px;
   }
 
   &__tag {
     display: inline-block;
-    border: 1px solid @grey-lightest;
     margin-bottom: 10px;
-    margin-right: 5px;
+    margin-right: 7px;
   }
 
   &__tag-link {
     .f-subtext();
-    text-decoration: none;
+    text-decoration: underline;
     color: @grey;
     display: inline-block;
-    padding: 5px 16px;
   }
 
 }
